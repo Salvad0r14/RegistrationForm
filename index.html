@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <section class="form">
+      <div class="form-container">
+        <h1>Registration Form</h1>
+        <form>
+          <div class="entry-field">
+            User Name : <input type="text" name="username" id="username" />
+          </div>
+          <div class="entry-field">
+            Email : <input type="email" name="email" id="email" />
+          </div>
+          <div class="entry-field">
+            Contact No:
+            <input type="number" name="contact" id="contact" />
+          </div>
+          <div class="entry-field">
+            Gender :
+            <input type="radio" name="gender" id="Male" value="Male" /><label
+              for="Male"
+              >Male</label
+            >
+            <input
+              type="radio"
+              name="gender"
+              id="Female"
+              value="Female"
+            /><label for="Female">Female</label>
+          </div>
+          <div class="entry-field">
+            Course :
+            <input
+              type="checkbox"
+              name="course"
+              id="React"
+              value="React"
+            />React
+            <input type="checkbox" name="course" id="Node" value="Node" />Node
+            <input
+              type="checkbox"
+              name="course"
+              id="MongoDB"
+              value="MongoDB"
+            />MongoDB
+          </div>
+          <div class="entry-field">
+            Age :
+            <select name="age" id="age">
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+              <option value="32">32</option>
+              <option value="33">33</option>
+              <option value="34">34</option>
+              <option value="35">35</option>
+              <option value="36">36</option>
+              <option value="37">37</option>
+              <option value="38">38</option>
+              <option value="39">39</option>
+              <option value="40">40</option>
+            </select>
+          </div>
+          <div class="entry-field">
+            Address:
+            <textarea name="address" id="address" cols="20" rows="5"></textarea>
+          </div>
+          <div class="buttons">
+            <button class="reset" type="reset">Reset</button>
+            <button class="submit" type="submit">Submit</button>
+            <button class="update hidden" type="button">Update</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="details">
+      <h1>Registration Form Details</h1>
+      <div class="details-container">
+        <div class="header-row row">
+          <div>Username</div>
+          <div>Email</div>
+          <div>Contact No.</div>
+          <div>Course</div>
+        </div>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
